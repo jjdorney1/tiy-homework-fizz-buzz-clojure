@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470858374159">{:repl-history {:ide [], :local [&quot;(defn echo [word times]\n  (loop [word word\n         times times\n         accumulator \&quot;\&quot;]\n    (if (= times 0)\n      accumulator\n      (recur word (- times 1) (str accumulator \&quot; \&quot; word)))))&quot; &quot;echo Hi 15&quot; &quot;(echo \&quot;hi\&quot; 15)&quot; &quot;(echo \&quot;hi\&quot; 5)&quot; &quot;(fizz-buzz 1 100)&quot;], :remote []}}</component>
+</project>
