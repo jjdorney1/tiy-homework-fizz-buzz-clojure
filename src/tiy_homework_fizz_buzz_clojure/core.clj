@@ -4,14 +4,14 @@
 ;      y (range 0 13)]
 ;  (str x " * " y " = " (* x y)))
 
-(defn -main[])
+;(defn -main[]
 
 (defn fizz-buzz [start end]
       (for [x (range start end)]
-        (cond (= (mod x 15) 0) (println "FizzBuzz")
-              (= (mod x 3) 0) (println "Fizz")
-              (= (mod x 5) 0) (println "Buzz")
-              :else (println x))))
+        (cond (= (mod x 15) 0) (str "FizzBuzz")
+              (= (mod x 3) 0) (str "Fizz")
+              (= (mod x 5) 0) (str "Buzz")
+              :else (str x))))
 
 
 
@@ -35,6 +35,6 @@
 
 ;(fizz-buzz 1 100)
 
-(-main)
+;(-main)
 
-(fizz-buzz 1 101)
+(println (fizz-buzz 1 101))
